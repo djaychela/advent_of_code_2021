@@ -30,7 +30,7 @@ def image_output(dots):
     for dot in dots:
         x_size = max(x_size, dot[0])
         y_size = max(y_size, dot[1])
-    image_grid = [["." for x in range(x_size + 1) ] for y in range(y_size + 1)]
+    image_grid = [[" " for x in range(x_size + 1) ] for y in range(y_size + 1)]
     for dot in dots:
         image_grid[dot[1]][dot[0]] = "*"
     for image in image_grid:
